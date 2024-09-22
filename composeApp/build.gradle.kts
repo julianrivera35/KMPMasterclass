@@ -1,4 +1,4 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -71,6 +71,11 @@ android {
     }
     dependencies {
         debugImplementation(compose.uiTooling)
+        implementation(libs.coil.compose)
+        implementation(libs.androidx.navigation.compose)
+        implementation(libs.koin.androidx.compose)
+        implementation(libs.koin.android)
+        implementation(libs.accompanist.swiperefresh)
     }
 }
 
